@@ -1,3 +1,15 @@
+* µmacs
+
+This project aims to remove as much code as possible from Emacs—that means breaking all compatibility features from Emacs. Especially removing all compatibility for systems and architectures and leave support only for macOS. Also removing all GUI related code so it only works on the terminal.
+
+Because compatibility is not an issue, I plan on also removing all built in packages that can be installed separately.
+
+This is NOT meant for public usage—it's a personal experiment and building a tool for my own use.
+
+Original README below:
+
+---
+
 Copyright (C) 2001-2026 Free Software Foundation, Inc.
 See the end of the file for license conditions.
 
