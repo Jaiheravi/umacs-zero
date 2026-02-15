@@ -1,6 +1,6 @@
 * µmacs
 
-This project aims to remove as much code as possible from Emacs—that means breaking all compatibility features from Emacs. Especially removing all compatibility for systems and architectures and leave support only for macOS. Also removing all GUI related code so it only works on the terminal.
+This project aims to remove as much code as possible from Emacs—that means breaking all compatibility features for different operating systems and only support macOS. Also to remove all GUI related code so it only works on the terminal.
 
 Because compatibility is not an issue, I plan on also removing all built in packages that can be installed separately.
 
