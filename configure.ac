@@ -7740,12 +7740,12 @@ dnl config.status treats $srcdir specially, so I think this is ok...
 ARCH_INDEPENDENT_CONFIG_FILES([$srcdir/doc/man/emacs.1])
 
 AC_CONFIG_FILES([lib/Makefile lib-src/Makefile oldXMenu/Makefile src/Makefile
-                 lwlib/Makefile nextstep/Makefile nt/Makefile])
+                 lwlib/Makefile nextstep/Makefile])
 ARCH_INDEPENDENT_CONFIG_FILES([doc/emacs/Makefile doc/misc/Makefile
                                doc/lispintro/Makefile doc/lispref/Makefile
 			       lisp/Makefile leim/Makefile])
 
-SUBDIR_MAKEFILES="lib/Makefile lib-src/Makefile oldXMenu/Makefile src/Makefile lwlib/Makefile nextstep/Makefile nt/Makefile doc/emacs/Makefile doc/misc/Makefile doc/lispintro/Makefile doc/lispref/Makefile lisp/Makefile leim/Makefile"
+SUBDIR_MAKEFILES="lib/Makefile lib-src/Makefile oldXMenu/Makefile src/Makefile lwlib/Makefile nextstep/Makefile doc/emacs/Makefile doc/misc/Makefile doc/lispintro/Makefile doc/lispref/Makefile lisp/Makefile leim/Makefile"
 
 dnl The test/ directory is missing if './make-dist --no-tests' was used.
 opt_makefile=test/Makefile

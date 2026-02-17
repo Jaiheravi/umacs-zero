@@ -341,7 +341,6 @@ SUBDIR_MAKEFILES = $(patsubst ${srcdir}/%,%,${SUBDIR_MAKEFILES_IN:.in=})
 
 # Non-makefile files created by config.status.
 CONFIG_STATUS_FILES_IN = \
- ${srcdir}/nt/emacs.rc.in ${srcdir}/nt/emacsclient.rc.in \
  ${srcdir}/doc/man/emacs.1.in ${srcdir}/src/emacs-module.h.in \
  ${srcdir}/src/module-env-*.h
 
@@ -642,11 +641,6 @@ endif
 	rm -rf ${ns_appresdir}/share
 endif
 
-### Windows-specific install target for installing programs produced
-### in nt/, and its Posix do-nothing shadow.
-install-:
-install-nt:
-	$(MAKE) -C $(NTDIR) install
 
 ## In the share directory, we are deleting:
 ## applications (with emacs.desktop, also found in etc/)
@@ -981,11 +975,6 @@ uninstall: uninstall-$(NTDIR) uninstall-doc uninstall-gsettings-schemas
 	done
   endif
 
-### Windows-specific uninstall target for removing programs produced
-### in nt/, and its Posix do-nothing shadow.
-uninstall-:
-uninstall-nt:
-	$(MAKE) -C $(NTDIR) uninstall
 
 # ==================== Cleaning up and miscellanea ====================
 
